@@ -26,18 +26,6 @@ namespace DeadWorld
             Listing_Standard listing = new Listing_Standard();
             listing.Begin(inRect);
 
-            listing.Label("DeadWorld_Settings_ShotHearingRange".Translate(settings.ShotHearingRange.ToString("F0")));
-            settings.ShotHearingRange = listing.Slider(settings.ShotHearingRange, 20f, 200f);
-            listing.Gap(12f);
-
-            listing.Label("DeadWorld_Settings_ExplosionHearingRange".Translate(settings.ExplosionHearingRange.ToString("F0")));
-            settings.ExplosionHearingRange = listing.Slider(settings.ExplosionHearingRange, 20f, 300f);
-            listing.Gap(12f);
-
-            listing.Label("DeadWorld_Settings_HordeCallRange".Translate(settings.HordeCallRange.ToString("F0")));
-            settings.HordeCallRange = listing.Slider(settings.HordeCallRange, 0f, 100f);
-            listing.Gap(12f);
-
             listing.Label("DeadWorld_Settings_ScratchInfectionChance".Translate(settings.ScratchInfectionChance.ToStringPercent()));
             settings.ScratchInfectionChance = listing.Slider(settings.ScratchInfectionChance, 0f, 1f);
             listing.Gap(12f);

@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <DeadWorld_SettingsCategory>Dead World - Zombie Apocalypse</DeadWorld_SettingsCategory>
-  <DeadWorld_Settings_ShotHearingRange>Gunshot hearing range: {0} cells</DeadWorld_Settings_ShotHearingRange>
-  <DeadWorld_Settings_ExplosionHearingRange>Explosion hearing range: {0} cells</DeadWorld_Settings_ExplosionHearingRange>
-  <DeadWorld_Settings_HordeCallRange>Horde call range: {0} cells</DeadWorld_Settings_HordeCallRange>
   <DeadWorld_Settings_ScratchInfectionChance>Infection chance from scratches: {0}</DeadWorld_Settings_ScratchInfectionChance>
   <DeadWorld_Settings_InfectionIncubationDays>Random infection incubation: 1.0 to {0} days</DeadWorld_Settings_InfectionIncubationDays>
   <DeadWorld_Settings_BitingFrenzyEnabled>Enable biting frenzy outbreaks</DeadWorld_Settings_BitingFrenzyEnabled>

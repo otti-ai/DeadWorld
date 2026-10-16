@@ -143,6 +143,32 @@ namespace DeadWorld
 
     }
 
+    [HarmonyPatch(typeof(Pawn), nameof(Pawn.PreApplyDamage))]
+    internal static class Patch_ZombieRetargetOnPlayerAttack
+    {
+        private static void Prefix(Pawn __instance, ref DamageInfo dinfo)
+        {
+            Pawn attacker = dinfo.Instigator as Pawn;
+            if (__instance?.def?.defName != "DeadWorld_Zombie" || __instance.Dead ||
+                attacker == null || attacker == __instance || attacker.Dead || attacker.Faction != Faction.OfPlayer)
+            {
+                return;
+            }
+
+            __instance.mindState.enemyTarget = attacker;
+            __instance.mindState.lastEngageTargetTick = Find.TickManager.TicksGame;
+        }
+    }
+
+    [HarmonyPatch(typeof(TickManager), nameof(TickManager.DoSingleTick))]
+    internal static class Patch_TickManager_ProcessZombieNoiseRallies
+    {
+        private static void Postfix()
+        {
+            ZombieNoise.ProcessPendingRallies();
+        }
+    }
+
     [HarmonyPatch(typeof(Corpse), "SpawnSetup", new[] { typeof(Map), typeof(bool) })]
     internal static class Patch_InfectedCorpseSpawn
     {
@@ -182,11 +208,27 @@ namespace DeadWorld
     [HarmonyPatch(typeof(GenClamor), nameof(GenClamor.DoClamor), new[] { typeof(Thing), typeof(float), typeof(ClamorDef) })]
     internal static class Patch_GenClamor_DoClamor
     {
-        private static void Postfix(Thing source, float radius)
+        private static void Postfix(Thing source, ClamorDef type)
         {
-            if (source != null && source.MapHeld != null)
+            if (source != null && source.MapHeld != null && type != ClamorDefOf.Movement)
             {
-                ZombieNoise.Record(source.MapHeld, source.PositionHeld, radius);
+            ZombieNoise.Record(source.MapHeld, source.PositionHeld);
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(Projectile), "Launch", new[]
+    {
+        typeof(Thing), typeof(UnityEngine.Vector3), typeof(LocalTargetInfo), typeof(LocalTargetInfo),
+        typeof(ProjectileHitFlags), typeof(bool), typeof(Thing), typeof(ThingDef)
+    })]
+    internal static class Patch_Projectile_Launch_RecordNoise
+    {
+        private static void Postfix(Thing launcher)
+        {
+            if (launcher?.MapHeld != null)
+            {
+                ZombieNoise.Record(launcher.MapHeld, launcher.PositionHeld);
             }
         }
     }
@@ -204,8 +246,7 @@ namespace DeadWorld
             Pawn shooter = __instance.CasterPawn;
             if (shooter != null && shooter.Spawned)
             {
-                float range = DeadWorldSettings.Current?.ShotHearingRange ?? 80f;
-                ZombieNoise.Record(shooter.Map, shooter.Position, range);
+                ZombieNoise.Record(shooter.Map, shooter.Position);
             }
         }
     }
@@ -217,8 +258,7 @@ namespace DeadWorld
         {
             if (doSoundEffects)
             {
-                float range = DeadWorldSettings.Current?.ExplosionHearingRange ?? 160f;
-                ZombieNoise.Record(map, center, range);
+                ZombieNoise.Record(map, center);
             }
         }
     }
