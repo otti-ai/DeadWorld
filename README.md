@@ -25,20 +25,3 @@ dotnet build Source/DeadWorld.csproj -p:GameDir="/path/to/RimWorld"
 ```
 
 The build writes compiled files to `Assemblies/`, which is excluded from Git. Do not commit compiled files or RimWorld game files.
-
-## Publish a GitHub release
-
-Install the .NET 10 SDK and GitHub CLI, then authenticate once with `gh auth login`. A ZIP utility (`zip` or `7z`) is also required. From the repository root, build and package the first release for your local RimWorld installation:
-
-```bash
-dotnet build Source/DeadWorld.csproj --configuration Release -p:GameDir="/path/to/RimWorld"
-bash scripts/package-release.sh v0.0.1
-```
-
-This creates `/tmp/deadworld-release/DeadWorld-v0.0.1.zip`, outside the repository. The ZIP has the mod folder at its root. Publish it as a GitHub Release asset:
-
-```bash
-gh release create v0.0.1 /tmp/deadworld-release/DeadWorld-v0.0.1.zip --title "Dead World v0.0.1" --generate-notes
-```
-
-For later releases, replace `v0.0.1` with the new version. The ZIP contains `About`, `Defs`, `Languages`, and the compiled mod DLLs. It does not contain RimWorld game files and is not stored in the Git repository; GitHub stores it as an asset attached to the Release. Compiled `Assemblies/` files are excluded from Git as well.
