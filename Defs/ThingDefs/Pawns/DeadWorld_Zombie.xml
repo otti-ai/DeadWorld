@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="Human">
+    <defName>DeadWorld_Zombie</defName>
+    <label>zombie</label>
+    <description>A reanimated corpse that shambles toward the living.</description>
+    <statBases>
+      <MoveSpeed>2.2</MoveSpeed>
+    </statBases>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>8.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>1</chanceFactor>
+        <soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+        <soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+      </li>
+    </tools>
+    <race>
+      <thinkTreeMain>DeadWorld_Zombie</thinkTreeMain>
+      <thinkTreeConstant>DeadWorld_ZombieConstant</thinkTreeConstant>
+      <baseHealthScale>1.35</baseHealthScale>
+      <lifeExpectancy>9999</lifeExpectancy>
+    </race>
+  </ThingDef>
+</Defs>

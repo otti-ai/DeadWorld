@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef ParentName="PirateBandBase">
+    <defName>DeadWorld_ZombieHorde</defName>
+    <label>zombie horde</label>
+    <description>A relentless horde of the reanimated dead.</description>
+    <pawnSingular>zombie</pawnSingular>
+    <pawnsPlural>zombies</pawnsPlural>
+    <fixedName>Zombie Horde</fixedName>
+    <autoFlee>false</autoFlee>
+    <fixedLeaderKinds>
+      <li>DeadWorld_Zombie</li>
+    </fixedLeaderKinds>
+    <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <DeadWorld_Zombie>8</DeadWorld_Zombie>
+          <DeadWorld_ZombieTribal>4</DeadWorld_ZombieTribal>
+          <DeadWorld_ZombieMilitary>1</DeadWorld_ZombieMilitary>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+</Defs>

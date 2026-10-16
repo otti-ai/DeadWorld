@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <DeadWorld_SettingsCategory>Dead World - Zombieapokalypse</DeadWorld_SettingsCategory>
+  <DeadWorld_Settings_ShotHearingRange>Hörreichweite für Schüsse: {0} Zellen</DeadWorld_Settings_ShotHearingRange>
+  <DeadWorld_Settings_ExplosionHearingRange>Hörreichweite für Explosionen: {0} Zellen</DeadWorld_Settings_ExplosionHearingRange>
+  <DeadWorld_Settings_HordeCallRange>Reichweite des Hordenrufs: {0} Zellen</DeadWorld_Settings_HordeCallRange>
+  <DeadWorld_Settings_ScratchInfectionChance>Infektionschance durch Kratzer: {0}</DeadWorld_Settings_ScratchInfectionChance>
+  <DeadWorld_Settings_InfectionIncubationDays>Zufällige Infektionsinkubation: 1,0 bis {0} Tage</DeadWorld_Settings_InfectionIncubationDays>
+  <DeadWorld_Settings_BitingFrenzyEnabled>Beißanfall-Ausbrüche aktivieren</DeadWorld_Settings_BitingFrenzyEnabled>
+  <DeadWorld_Settings_ZombiesResurrect>Gestorbene Zombies stehen wieder auf</DeadWorld_Settings_ZombiesResurrect>
+  <DeadWorld_Settings_ZombieResurrectionMaxDays>Zufällige Wiederbelebungszeit: 1,0 bis {0} Tage</DeadWorld_Settings_ZombieResurrectionMaxDays>
+</LanguageData>

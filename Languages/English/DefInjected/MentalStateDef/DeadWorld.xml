@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <DeadWorld_BitingFrenzy.label>biting frenzy</DeadWorld_BitingFrenzy.label>
+  <DeadWorld_BitingFrenzy.beginLetter>{0} has entered a violent biting frenzy and is attacking people nearby.</DeadWorld_BitingFrenzy.beginLetter>
+  <DeadWorld_BitingFrenzy.recoveryMessage>{0}'s biting frenzy has ended.</DeadWorld_BitingFrenzy.recoveryMessage>
+  <DeadWorld_BitingFrenzy.baseInspectLine>Mental state: biting frenzy</DeadWorld_BitingFrenzy.baseInspectLine>
+</LanguageData>

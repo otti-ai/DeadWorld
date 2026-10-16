@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <DeadWorld_ZombieInfection.label>zombie infection</DeadWorld_ZombieInfection.label>
+  <DeadWorld_ZombieInfection.description>A zombie infection that starts in one wounded body part and spreads slowly. If it reaches the head or torso, it becomes systemic throughout the body. After the configured incubation period, the infected pawn dies and reanimates. If killed by another cause first, it reanimates immediately.</DeadWorld_ZombieInfection.description>
+  <DeadWorld_ZombieInfection.stages.0.label>localized</DeadWorld_ZombieInfection.stages.0.label>
+  <DeadWorld_ZombieInfection.stages.1.label>spreading</DeadWorld_ZombieInfection.stages.1.label>
+  <DeadWorld_ZombieInfection.stages.2.label>advanced</DeadWorld_ZombieInfection.stages.2.label>
+  <DeadWorld_ZombieInfectionSystemic.label>systemic zombie infection</DeadWorld_ZombieInfectionSystemic.label>
+  <DeadWorld_ZombieInfectionSystemic.description>The infection has reached the head or torso and is now systemic throughout the body. It cannot be cured. If the pawn dies first, it reanimates immediately.</DeadWorld_ZombieInfectionSystemic.description>
+  <DeadWorld_ZombieInfectionSystemic.stages.0.label>systemic</DeadWorld_ZombieInfectionSystemic.stages.0.label>
+  <DeadWorld_ZombieInfectionSystemic.stages.1.label>terminal</DeadWorld_ZombieInfectionSystemic.stages.1.label>
+  <DeadWorld_ZombieResurrection.label>undead persistence</DeadWorld_ZombieResurrection.label>
+  <DeadWorld_ZombieResurrection.description>This zombie will rise again after its body recovers.</DeadWorld_ZombieResurrection.description>
+  <DeadWorld_ZombieResurrection.stages.0.label>dead</DeadWorld_ZombieResurrection.stages.0.label>
+  <DeadWorld_ZombieRot.label>rotting</DeadWorld_ZombieRot.label>
+  <DeadWorld_ZombieRot.description>The corpse's skin has taken on the gray-green cast of decay.</DeadWorld_ZombieRot.description>
+  <DeadWorld_ZombieRotPale.label>rotting</DeadWorld_ZombieRotPale.label>
+  <DeadWorld_ZombieRotPale.description>The corpse's skin has turned pale and bloodless.</DeadWorld_ZombieRotPale.description>
+  <DeadWorld_ZombieRotDark.label>rotting</DeadWorld_ZombieRotDark.label>
+  <DeadWorld_ZombieRotDark.description>The corpse's skin is darkened by bruising and decay.</DeadWorld_ZombieRotDark.description>
+</LanguageData>

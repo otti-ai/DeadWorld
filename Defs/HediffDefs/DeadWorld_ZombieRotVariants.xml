@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>DeadWorld_ZombieRotPale</defName>
+    <label>rotting</label>
+    <description>The corpse's skin has turned pale and bloodless.</description>
+    <initialSeverity>1</initialSeverity>
+    <skinColorTint>(0.62, 0.68, 0.59)</skinColorTint>
+    <skinColorTintStrength>0.9</skinColorTintStrength>
+    <forceRenderTreeRecache>true</forceRenderTreeRecache>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>DeadWorld_ZombieRotDark</defName>
+    <label>rotting</label>
+    <description>The corpse's skin is darkened by bruising and decay.</description>
+    <initialSeverity>1</initialSeverity>
+    <skinColorTint>(0.40, 0.48, 0.36)</skinColorTint>
+    <skinColorTintStrength>0.9</skinColorTintStrength>
+    <forceRenderTreeRecache>true</forceRenderTreeRecache>
+  </HediffDef>
+</Defs>

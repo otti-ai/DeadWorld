@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <DeadWorld_Zombie.label>Zombie</DeadWorld_Zombie.label>
+  <DeadWorld_Zombie.description>Ein wiedererweckter Leichnam, der auf die Lebenden zuschlurft.</DeadWorld_Zombie.description>
+  <DeadWorld_Zombie.tools.0.label>linke Klaue</DeadWorld_Zombie.tools.0.label>
+  <DeadWorld_Zombie.tools.1.label>rechte Klaue</DeadWorld_Zombie.tools.1.label>
+  <DeadWorld_Zombie.tools.2.label>Zähne</DeadWorld_Zombie.tools.2.label>
+</LanguageData>

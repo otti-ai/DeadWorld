@@ -1,0 +1,12 @@
+# Build output and generated assemblies
+/Assemblies/*
+/dist/
+**/bin/
+**/obj/
+
+# Local editor and operating-system files
+.vscode/
+*.user
+*.suo
+.DS_Store
+Thumbs.db

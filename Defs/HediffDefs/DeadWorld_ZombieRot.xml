@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>DeadWorld_ZombieRot</defName>
+    <label>rotting</label>
+    <description>The corpse's skin has taken on the gray-green cast of decay.</description>
+    <initialSeverity>1</initialSeverity>
+    <skinColorTint>(0.42, 0.56, 0.43)</skinColorTint>
+    <skinColorTintStrength>0.8</skinColorTintStrength>
+    <forceRenderTreeRecache>true</forceRenderTreeRecache>
+  </HediffDef>
+</Defs>

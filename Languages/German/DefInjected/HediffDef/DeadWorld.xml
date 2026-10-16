@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <DeadWorld_ZombieInfection.label>Zombieinfektion</DeadWorld_ZombieInfection.label>
+  <DeadWorld_ZombieInfection.description>Eine Zombieinfektion, die in einem verletzten Körperteil beginnt und sich langsam ausbreitet. Erreicht sie Kopf oder Torso, wird sie systemisch und befällt den ganzen Körper. Nach Ablauf der Inkubationszeit stirbt der infizierte Bewohner und wird zum Zombie. Stirbt er vorher auf andere Weise, erhebt er sich sofort wieder.</DeadWorld_ZombieInfection.description>
+  <DeadWorld_ZombieInfection.stages.0.label>Lokal</DeadWorld_ZombieInfection.stages.0.label>
+  <DeadWorld_ZombieInfection.stages.1.label>Ausbreitend</DeadWorld_ZombieInfection.stages.1.label>
+  <DeadWorld_ZombieInfection.stages.2.label>Fortgeschritten</DeadWorld_ZombieInfection.stages.2.label>
+  <DeadWorld_ZombieInfectionSystemic.label>Systemische Zombieinfektion</DeadWorld_ZombieInfectionSystemic.label>
+  <DeadWorld_ZombieInfectionSystemic.description>Die Infektion hat Kopf oder Torso erreicht und befällt nun den ganzen Körper. Sie ist nicht heilbar. Stirbt der Bewohner vorher, erhebt er sich sofort wieder.</DeadWorld_ZombieInfectionSystemic.description>
+  <DeadWorld_ZombieInfectionSystemic.stages.0.label>Systemisch</DeadWorld_ZombieInfectionSystemic.stages.0.label>
+  <DeadWorld_ZombieInfectionSystemic.stages.1.label>Endstadium</DeadWorld_ZombieInfectionSystemic.stages.1.label>
+  <DeadWorld_ZombieResurrection.label>Untote Ausdauer</DeadWorld_ZombieResurrection.label>
+  <DeadWorld_ZombieResurrection.description>Dieser Zombie erhebt sich wieder, sobald sich sein Körper erholt hat.</DeadWorld_ZombieResurrection.description>
+  <DeadWorld_ZombieResurrection.stages.0.label>Tot</DeadWorld_ZombieResurrection.stages.0.label>
+  <DeadWorld_ZombieRot.label>Verwesend</DeadWorld_ZombieRot.label>
+  <DeadWorld_ZombieRot.description>Die Haut des Leichnams hat den graugrünen Ton der Verwesung angenommen.</DeadWorld_ZombieRot.description>
+  <DeadWorld_ZombieRotPale.label>Verwesend</DeadWorld_ZombieRotPale.label>
+  <DeadWorld_ZombieRotPale.description>Die Haut des Leichnams ist blass und blutleer geworden.</DeadWorld_ZombieRotPale.description>
+  <DeadWorld_ZombieRotDark.label>Verwesend</DeadWorld_ZombieRotDark.label>
+  <DeadWorld_ZombieRotDark.description>Die Haut des Leichnams ist von Blutergüssen und Verwesung verdunkelt.</DeadWorld_ZombieRotDark.description>
+</LanguageData>

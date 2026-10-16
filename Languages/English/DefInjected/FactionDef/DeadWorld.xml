@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <DeadWorld_ZombieHorde.label>zombie horde</DeadWorld_ZombieHorde.label>
+  <DeadWorld_ZombieHorde.description>A relentless horde of the reanimated dead.</DeadWorld_ZombieHorde.description>
+  <DeadWorld_ZombieHorde.pawnSingular>zombie</DeadWorld_ZombieHorde.pawnSingular>
+  <DeadWorld_ZombieHorde.pawnsPlural>zombies</DeadWorld_ZombieHorde.pawnsPlural>
+  <DeadWorld_ZombieHorde.fixedName>Zombie Horde</DeadWorld_ZombieHorde.fixedName>
+</LanguageData>

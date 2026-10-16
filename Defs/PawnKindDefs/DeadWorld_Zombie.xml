@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef Name="DeadWorld_ZombieBase" Abstract="True">
+    <race>DeadWorld_Zombie</race>
+    <defaultFactionDef>DeadWorld_ZombieHorde</defaultFactionDef>
+    <isFighter>true</isFighter>
+    <initialResistanceRange>0~0</initialResistanceRange>
+    <initialWillRange>0~0</initialWillRange>
+    <canOpenDoors>false</canOpenDoors>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Offworld</li>
+          <li>Outlander</li>
+          <li>Outsider</li>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="DeadWorld_ZombieBase">
+    <defName>DeadWorld_Zombie</defName>
+    <label>shambling zombie</label>
+    <combatPower>35</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.2~0.6</gearHealthRange>
+    <apparelMoney>80~280</apparelMoney>
+    <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <weaponMoney>0</weaponMoney>
+    <startingHediffs>
+      <li>
+        <def>DeadWorld_ZombieRot</def>
+        <severity>1</severity>
+      </li>
+    </startingHediffs>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="DeadWorld_ZombieBase">
+    <defName>DeadWorld_ZombieTribal</defName>
+    <label>feral zombie</label>
+    <combatPower>30</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.1~0.5</gearHealthRange>
+    <apparelMoney>40~220</apparelMoney>
+    <apparelAllowHeadgearChance>0.05</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>Neolithic</li>
+    </apparelTags>
+    <weaponMoney>0</weaponMoney>
+    <startingHediffs>
+      <li>
+        <def>DeadWorld_ZombieRotPale</def>
+        <severity>1</severity>
+      </li>
+    </startingHediffs>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="DeadWorld_ZombieBase">
+    <defName>DeadWorld_ZombieMilitary</defName>
+    <label>armored zombie</label>
+    <combatPower>55</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.3~0.8</gearHealthRange>
+    <apparelMoney>250~600</apparelMoney>
+    <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>IndustrialMilitaryBasic</li>
+    </apparelTags>
+    <weaponMoney>0</weaponMoney>
+    <startingHediffs>
+      <li>
+        <def>DeadWorld_ZombieRotDark</def>
+        <severity>1</severity>
+      </li>
+    </startingHediffs>
+  </PawnKindDef>
+</Defs>

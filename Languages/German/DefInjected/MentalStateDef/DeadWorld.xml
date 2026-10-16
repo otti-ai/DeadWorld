@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <DeadWorld_BitingFrenzy.label>Beißanfall</DeadWorld_BitingFrenzy.label>
+  <DeadWorld_BitingFrenzy.beginLetter>{0} ist in einen gewalttätigen Beißanfall verfallen und greift Personen in der Nähe an.</DeadWorld_BitingFrenzy.beginLetter>
+  <DeadWorld_BitingFrenzy.recoveryMessage>Der Beißanfall von {0} ist vorüber.</DeadWorld_BitingFrenzy.recoveryMessage>
+  <DeadWorld_BitingFrenzy.baseInspectLine>Mentaler Zustand: Beißanfall</DeadWorld_BitingFrenzy.baseInspectLine>
+</LanguageData>

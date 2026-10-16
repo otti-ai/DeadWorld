@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <MentalBreakDef>
+    <defName>DeadWorld_BitingFrenzy</defName>
+    <mentalState>DeadWorld_BitingFrenzy</mentalState>
+    <baseCommonality>1</baseCommonality>
+    <intensity>Extreme</intensity>
+  </MentalBreakDef>
+
+  <MentalStateDef ParentName="Berserk">
+    <defName>DeadWorld_BitingFrenzy</defName>
+    <stateClass>DeadWorld.MentalState_BitingFrenzy</stateClass>
+    <label>biting frenzy</label>
+    <minTicksBeforeRecovery>6000</minTicksBeforeRecovery>
+    <maxTicksBeforeRecovery>10000</maxTicksBeforeRecovery>
+    <beginLetter>{0} has fallen into a violent biting frenzy and is attacking nearby people.</beginLetter>
+    <beginLetterDef>ThreatSmall</beginLetterDef>
+  </MentalStateDef>
+</Defs>
