@@ -6,10 +6,10 @@ if [[ $# -ne 1 || "$1" != v* || "$1" == *[!A-Za-z0-9._-]* ]]; then
     exit 2
 fi
 
-command -v zip >/dev/null 2>&1 || {
-    echo "The zip command is required to package the release." >&2
+if ! command -v zip >/dev/null 2>&1 && ! command -v 7z >/dev/null 2>&1; then
+    echo "Either zip or 7z is required to package the release." >&2
     exit 1
-}
+fi
 
 repo_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 for required_path in About/About.xml Defs Languages; do
@@ -42,5 +42,9 @@ for assembly in "$repo_dir"/Assemblies/*.dll; do
     [[ -f "$assembly" ]] && cp "$assembly" "$work_dir/DeadWorld/Assemblies/"
 done
 
-(cd "$work_dir" && zip -qr "$archive" DeadWorld)
+if command -v zip >/dev/null 2>&1; then
+    (cd "$work_dir" && zip -qr "$archive" DeadWorld)
+else
+    (cd "$work_dir" && 7z a -tzip -y "$archive" DeadWorld >/dev/null)
+fi
 printf 'Created %s\n' "$archive"

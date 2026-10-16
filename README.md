@@ -28,7 +28,7 @@ The build writes compiled files to `Assemblies/`, which is excluded from Git. Do
 
 ## Publish a GitHub release
 
-Install and authenticate the GitHub CLI once with `gh auth login`. Then, from the repository root, build and package the first release for your local RimWorld installation:
+Install the .NET 10 SDK and GitHub CLI, then authenticate once with `gh auth login`. A ZIP utility (`zip` or `7z`) is also required. From the repository root, build and package the first release for your local RimWorld installation:
 
 ```bash
 dotnet build Source/DeadWorld.csproj --configuration Release -p:GameDir="/path/to/RimWorld"
