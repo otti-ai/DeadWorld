@@ -35,10 +35,10 @@ dotnet build Source/DeadWorld.csproj --configuration Release -p:GameDir="/path/t
 bash scripts/package-release.sh v0.0.1
 ```
 
-This creates `dist/DeadWorld-v0.0.1.zip`, with the mod folder at the archive root. Publish it as a GitHub Release:
+This creates `/tmp/deadworld-release/DeadWorld-v0.0.1.zip`, outside the repository. The ZIP has the mod folder at its root. Publish it as a GitHub Release asset:
 
 ```bash
-gh release create v0.0.1 dist/DeadWorld-v0.0.1.zip --title "Dead World v0.0.1" --generate-notes
+gh release create v0.0.1 /tmp/deadworld-release/DeadWorld-v0.0.1.zip --title "Dead World v0.0.1" --generate-notes
 ```
 
-For later releases, replace `v0.0.1` with the new version. The ZIP contains `About`, `Defs`, `Languages`, and the compiled mod DLLs. It does not contain RimWorld game files. The generated `dist/` directory and compiled `Assemblies/` files are not committed to the source repository.
+For later releases, replace `v0.0.1` with the new version. The ZIP contains `About`, `Defs`, `Languages`, and the compiled mod DLLs. It does not contain RimWorld game files and is not stored in the Git repository; GitHub stores it as an asset attached to the Release. Compiled `Assemblies/` files are excluded from Git as well.
